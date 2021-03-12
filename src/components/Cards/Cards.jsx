@@ -46,6 +46,7 @@ const Cards = ({ data, country }) => {
             <Grid container spacing={3} justify="center">
                 {allData.map(data => (
                     <Grid
+                        key={data.id}
                         item
                         component={Card}
                         xs={12}
